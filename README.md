@@ -34,3 +34,14 @@ For example, how much does this basket of books cost?
 1 copy of the fifth book
 
 Answer: 51.20 EUR. We apply 2 times a discount for four books. 4 * 8 * 0.8 * 2 = 51.20.
+
+
+Test cases:
+1. 3 copies of same book purchase no discount and cost 8 * 3
+2. 3 copies of first book, 1 copy of the second book purchase get 5% discount, 8 * 2 * 0.05 + 8 * 2
+3. 2 copies of first book, 2 copies of the second book purchase get 5% discount, 8 * 2 * 0.05 * 2
+4. 3 copies of first book, 2 copies of the second book and 1 copy of 3rd book purchase cost=8 * 3 * 0.1 + 8 * 2 * .05 + 8 * 1
+5. 3 copies of first book, 2 copies of the second book and 2 copies of 3rd book purchase cost=8 * 3 * 0.1 * 2 + 8 * 1
+6. 3 copies of first book, 2 copies of the second book, 2 copies of 3rd book and 1 copies of 4th book purchase, cost=8 * 4 * 0.2 + 8 * 3 * .1 + 8
+7. 3 copies of first book, 2 copies of the second book, 2 copies of 3rd book and 2 copies of 4th book purchase and 1 vopy of 5th book,
+     cost=8 * 5 * 0.25 + 8 * 4 * .2 + 8
