@@ -1,9 +1,6 @@
 package com.tushar.booksale;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -24,12 +21,32 @@ public class Cart {
     }
 
     public double totalValue() {
-        Map<Book, Long> bookQuantityMap = this.books.stream()
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        Map<Book, Long> bookQuantityMap = createIndividualGroupByBooks();
+        double total = 0.0;
+        while (!bookQuantityMap.isEmpty()) {
+            int distinctBooks = bookQuantityMap.size();
+            double price = reduceQuantityOfEachTypeAndSumThePriceAtEachIteration(bookQuantityMap);
+            total += (1.0 - this.discountStrategies.get(distinctBooks - 1).discount()) * price;
+        }
+        return total;
+    }
 
-        Double sum = this.books.stream().map(Book::getPrice).reduce(Double::sum).orElse(0.0);
-        return (1.0 - this.discountStrategies.get(bookQuantityMap.size() - 1).discount())
-                * sum;
+    private static double reduceQuantityOfEachTypeAndSumThePriceAtEachIteration(Map<Book, Long> cloneMap) {
+        double price = 0;
+        for (Book key: new HashSet<>(cloneMap.keySet())) {
+            price += key.getPrice();
+            if (cloneMap.get(key) == 1) {
+                cloneMap.remove(key);
+            } else {
+                cloneMap.put(key, cloneMap.get(key) - 1);
+            }
+        }
+        return price;
+    }
+
+    private Map<Book, Long> createIndividualGroupByBooks() {
+        return this.books.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     }
 
 }

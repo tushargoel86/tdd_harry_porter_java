@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d0cbefa-8ea3-4f08-9f52-44fc65021591" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/BookTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tushar/booksale/CartTest.java" afterDir="false" />
+    <list default="true" id="7d0cbefa-8ea3-4f08-9f52-44fc65021591" name="Changes" comment="Test case with books of same type and only 2 books of equal quantities">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/TenPercentageDiscountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tushar/booksale/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tushar/booksale/CartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,19 +43,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tushar.booksale" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CartTest">
+    <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd_harry_porter_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tushar.booksale" />
+      <option name="MAIN_CLASS_NAME" value="com.tushar.booksale.CartTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CartTest.testForSingleBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd_harry_porter_java" />
       <extension name="coverage">
@@ -76,8 +87,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CartTest.testForSingleBook2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd_harry_porter_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tushar.booksale" />
+      <option name="MAIN_CLASS_NAME" value="com.tushar.booksale.CartTest" />
+      <option name="METHOD_NAME" value="testForSingleBook2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.testForTwoBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd_harry_porter_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tushar.booksale" />
+      <option name="MAIN_CLASS_NAME" value="com.tushar.booksale.CartTest" />
+      <option name="METHOD_NAME" value="testForTwoBooks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.testForTwoBooks2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd_harry_porter_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tushar.booksale" />
+      <option name="MAIN_CLASS_NAME" value="com.tushar.booksale.CartTest" />
+      <option name="METHOD_NAME" value="testForTwoBooks2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CartTest" />
+        <item itemvalue="JUnit.CartTest.testForTwoBooks2" />
+        <item itemvalue="JUnit.CartTest.testForTwoBooks" />
+        <item itemvalue="JUnit.CartTest.testForSingleBook2" />
         <item itemvalue="JUnit.CartTest.testForSingleBook" />
       </list>
     </recent_temporary>
@@ -91,6 +154,21 @@
       <option name="presentableId" value="Default" />
       <updated>1662192042422</updated>
     </task>
+    <task id="LOCAL-00001" summary="First test with single book and 1 copy">
+      <created>1662196012398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662196012398</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test case with books of same type and only 2 books of equal quantities">
+      <created>1662398041515</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662398041515</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,5 +181,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First test with single book and 1 copy" />
+    <MESSAGE value="Test case with books of same type and only 2 books of equal quantities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test case with books of same type and only 2 books of equal quantities" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this.books.get(4)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
