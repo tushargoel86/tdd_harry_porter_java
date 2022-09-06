@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d0cbefa-8ea3-4f08-9f52-44fc65021591" name="Changes" comment="Test case with books of same type and only 2 books of equal quantities">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/TenPercentageDiscountStrategy.java" afterDir="false" />
+    <list default="true" id="7d0cbefa-8ea3-4f08-9f52-44fc65021591" name="Changes" comment="In this most of the test cases we identified earlier are written and passed. Also, I have not used similar test cases like what happened when n copies of 2,3,4,5 provided. I used only for book1 and thought test cases will not add any value. Similar to other combinations as well.&#10;&#10;In next commit, I will do refactoring related to this.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/DiscountStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/discount/DiscountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/FivePercentageDiscountStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/discount/FivePercentageDiscountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/NoDiscountStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/discount/NoDiscountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/TenPercentageDiscountStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/discount/TenPercentageDiscountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/TwentyFivecentageDiscountStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/discount/TwentyFivecentageDiscountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/TwentyPercentageDiscountStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tushar/booksale/discount/TwentyPercentageDiscountStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tushar/booksale/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tushar/booksale/CartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +66,7 @@
       <module name="tdd_harry_porter_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="PATTERN" value="com.tushar.booksale.discount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,27 +77,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest.testForSingleBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tdd_harry_porter_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tushar.booksale.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tushar.booksale" />
-      <option name="MAIN_CLASS_NAME" value="com.tushar.booksale.CartTest" />
-      <option name="METHOD_NAME" value="testForSingleBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CartTest.testForSingleBook2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd_harry_porter_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="PATTERN" value="com.tushar.booksale.discount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,7 +97,7 @@
       <module name="tdd_harry_porter_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="PATTERN" value="com.tushar.booksale.discount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,7 +113,7 @@
       <module name="tdd_harry_porter_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="PATTERN" value="com.tushar.booksale.discount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,13 +125,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.tushar.booksale in tdd_harry_porter_java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd_harry_porter_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tushar.booksale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tushar.booksale" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CartTest" />
-        <item itemvalue="JUnit.CartTest.testForTwoBooks2" />
         <item itemvalue="JUnit.CartTest.testForTwoBooks" />
         <item itemvalue="JUnit.CartTest.testForSingleBook2" />
-        <item itemvalue="JUnit.CartTest.testForSingleBook" />
+        <item itemvalue="JUnit.com.tushar.booksale in tdd_harry_porter_java" />
+        <item itemvalue="JUnit.CartTest.testForTwoBooks2" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662398041515</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test case for 3 books with different pairs and some refactoring of the code">
+      <created>1662402069203</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662402069203</updated>
+    </task>
+    <task id="LOCAL-00004" summary="In this most of the test cases we identified earlier are written and passed. Also, I have not used similar test cases like what happened when n copies of 2,3,4,5 provided. I used only for book1 and thought test cases will not add any value. Similar to other combinations as well.&#10;&#10;In next commit, I will do refactoring related to this.">
+      <created>1662480157503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662480157503</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +203,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First test with single book and 1 copy" />
     <MESSAGE value="Test case with books of same type and only 2 books of equal quantities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test case with books of same type and only 2 books of equal quantities" />
+    <MESSAGE value="Test case for 3 books with different pairs and some refactoring of the code" />
+    <MESSAGE value="In this most of the test cases we identified earlier are written and passed. Also, I have not used similar test cases like what happened when n copies of 2,3,4,5 provided. I used only for book1 and thought test cases will not add any value. Similar to other combinations as well.&#10;&#10;In next commit, I will do refactoring related to this." />
+    <option name="LAST_COMMIT_MESSAGE" value="In this most of the test cases we identified earlier are written and passed. Also, I have not used similar test cases like what happened when n copies of 2,3,4,5 provided. I used only for book1 and thought test cases will not add any value. Similar to other combinations as well.&#10;&#10;In next commit, I will do refactoring related to this." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -193,5 +213,10 @@
         <watch expression="this.books.get(4)" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tdd_harry_porter_java$com_tushar_booksale_in_tdd_harry_porter_java.ic" NAME="com.tushar.booksale in tdd_harry_porter_java Coverage Results" MODIFIED="1662481186132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tushar.booksale.*</FILTER>
+    </SUITE>
   </component>
 </project>
