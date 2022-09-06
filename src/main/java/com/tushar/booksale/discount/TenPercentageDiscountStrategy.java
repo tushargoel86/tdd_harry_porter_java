@@ -1,4 +1,4 @@
-package com.tushar.booksale;
+package com.tushar.booksale.discount;
 
 public class TenPercentageDiscountStrategy implements DiscountStrategy {
     @Override

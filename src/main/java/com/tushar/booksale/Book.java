@@ -1,14 +1,15 @@
 package com.tushar.booksale;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Book {
     private String name;
-    private double price;
+    private BigDecimal price;
 
-    public Book(String name, double price) {
+    public Book(String name, String price) {
         this.name = name;
-        this.price = price;
+        this.price = new BigDecimal(price);
     }
 
     @Override
@@ -24,11 +25,7 @@ public class Book {
         return Objects.hash(name);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 }
