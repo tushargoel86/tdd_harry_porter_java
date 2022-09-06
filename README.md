@@ -1,4 +1,4 @@
-# tdd_harry_porter_java
+# tdd_harry_potter_java
 
 
 To try and encourage more sales of the 5 different Harry
